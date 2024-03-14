@@ -6,8 +6,12 @@ const reservationSchema = mongoose.Schema(
             type: String,
             required: true
         },
+        email: {
+            type: String,
+            required: true
+        },
         selectedVenue: {
-            type: Number,
+            type: String,
             required: true
         },
         initialDate: {
@@ -20,10 +24,6 @@ const reservationSchema = mongoose.Schema(
         },
         amountPeople: {
             type: Number,
-            required: true
-        },
-        email: {
-            type: String,
             required: true
         }
     }
